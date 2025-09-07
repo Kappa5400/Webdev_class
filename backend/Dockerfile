@@ -1,5 +1,5 @@
 FROM node:20
-WORKDIR / app
+WORKDIR /app
 COPY  package.json package-lock.json ./
 RUN npm install 
 COPY . .
