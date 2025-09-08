@@ -22,7 +22,7 @@ export function Blog() {
       <hr />
       Filter by:{' '}
       <PostFilter
-        field='author_test'
+        field='author'
         value={author}
         onChange={(value) => setAuthor(value)}
       />
