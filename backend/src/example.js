@@ -1,6 +1,7 @@
+import dotenv from 'dotenv'
 import { initDatabase } from './db/init.js'
 import { Post } from './db/models/post.js'
-import dotenv from 'dotenv'
+
 dotenv.config()
 await initDatabase()
 const post = new Post({
