@@ -1,8 +1,9 @@
 FROM node:20
-WORKDIR / app
+WORKDIR /app
 COPY  package.json package-lock.json ./
 RUN npm install 
 COPY . .
-
+ENV PORT=8080
+EXPOSE 8080
 CMD ["npm", "start"]
 
