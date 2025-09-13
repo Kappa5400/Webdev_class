@@ -1,5 +1,5 @@
 FROM node:20 AS build
-ARG VITE_BACKEND_URL=https://blog-back-end-8033512717.us-central1.run.app/api/v1
+ARG VITE_BACKEND_URL=https://orange-space-telegram-pjpq5pvp6496h9697-3001.app.github.dev/api/v1
 WORKDIR /build
 COPY package.json .
 COPY package-lock.json .
