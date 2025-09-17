@@ -4,12 +4,19 @@ import { Signup } from './pages/Signup.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 const queryClient = new QueryClient()
 const router = createBrowserRouter([
-   {
-      path: '/',
-      element: <Blog />,
-   },
-   {
-      path: '/signup',
-      element: <Signup />,
-   },
+  {
+    path: '/',
+    element: <Blog />,
+  },
+  {
+    path: '/signup',
+    element: <Signup />,
+  },
 ])
+export function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
+  )
+}
